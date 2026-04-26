@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pedro Panzo CV</title>
+
+<style>
+@page { size: A4; margin: 12mm; }
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top {
+    margin: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    background: #0f172a;
+    color: white;
+    cursor: pointer;
+}
+
+.cv {
+    width: 210mm;
+    height: 297mm;
+    background: white;
+    display: grid;
+    grid-template-columns: 36% 64%;
+}
+
+/* LEFT */
+.left {
+    background: #0f172a;
+    color: white;
+    padding: 20px;
+}
+
+.photo {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #38bdf8;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22px;
+}
+
+.title {
+    text-align: center;
+    font-size: 12px;
+    color: #94a3b8;
+    border-bottom: 1px solid #334155;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.section {
+    margin-top: 12px;
+}
+
+.section h3 {
+    font-size: 13px;
+    color: #38bdf8;
+    border-left: 3px solid #38bdf8;
+    padding-left: 6px;
+    margin-bottom: 6px;
+}
+
+.item {
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+/* RIGHT */
+.right {
+    padding: 20px;
+}
+
+.right h3 {
+    font-size: 14px;
+    border-left: 3px solid #0f172a;
+    padding-left: 6px;
+    margin-bottom: 6px;
+}
+
+.block {
+    margin-bottom: 12px;
+}
+
+p, li {
+    font-size: 12.5px;
+    line-height: 1.4;
+}
+
+ul {
+    margin-left: 18px;
+    margin-top: 5px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.job-title {
+    font-weight: bold;
+}
+
+.date {
+    font-size: 12px;
+    color: gray;
+}
+
+.lang { display: none; }
+.lang.active { display: block; }
+
+@media print {
+    body { background: white; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="top">
+    <button onclick="setLang('pt')">Português</button>
+    <button onclick="setLang('en')">English</button>
+    <button onclick="window.print()">📄 PDF</button>
+</div>
+
+<div class="cv">
+
+<!-- LEFT -->
+<div class="left">
+
+<div class="photo">
+    <img src="../assets/images/profile.jpg" alt="Pedro Panzo">
+</div>
+
+<h1>Pedro Panzo</h1>
+<div class="title">IT Technician</div>
+
+<div class="section">
+<h3>CONTACTO</h3>
+<div class="item">📞 +351 937277022</div>
+<div class="item">📧 panzo5225@gmail.com</div>
+<div class="item">📍 Portugal</div>
+</div>
+
+<div class="section">
+<h3>LÍNGUAS</h3>
+<div class="item">Português</div>
+<div class="item">Inglês</div>
+</div>
+
+<div class="section">
+<h3>COMPETÊNCIAS</h3>
+<div class="item">• Redes LAN/WAN</div>
+<div class="item">• Configuração Cisco</div>
+<div class="item">• Suporte técnico</div>
+<div class="item">• Troubleshooting</div>
+<div class="item">• Trabalho em equipa</div>
+<div class="item">• Adaptabilidade</div>
+</div>
+
+</div>
+
+<!-- RIGHT -->
+<div class="right">
+
+<!-- PT -->
+<div id="pt" class="lang active">
+
+<div class="block">
+<h3>SOBRE MIM</h3>
+<p>
+Profissional de TI com experiência em redes, infraestrutura e suporte técnico. 
+Especializado na instalação e manutenção de redes LAN, configuração de equipamentos e resolução de problemas. 
+Possui certificação Cisco e foco em segurança, desempenho e estabilidade dos sistemas.
+</p>
+</div>
+
+<div class="block">
+<h3>EXPERIÊNCIA</h3>
+
+<div class="job-header">
+<span class="job-title">Técnico de TI</span>
+<span class="date">2023–2025</span>
+</div>
+
+<p>Grupo Sirius – Angola</p>
+
+<ul>
+<li>Instalação e manutenção de redes LAN</li>
+<li>Configuração de routers, switches e access points</li>
+<li>Suporte técnico a utilizadores</li>
+<li>Diagnóstico de falhas de hardware e software</li>
+<li>Monitoramento de redes</li>
+<li>Gestão de equipamentos de TI</li>
+</ul>
+</div>
+
+<div class="block">
+<h3>EDUCAÇÃO</h3>
+<p><b>Técnico de Informática</b> – 2019–2024</p>
+<p>ITEL – Angola</p>
+
+<p><b>Análise e Desenvolvimento de Sistemas</b> – 2024–</p>
+<p>AIEC – Brasil</p>
+</div>
+
+<div class="block">
+<h3>CERTIFICADOS</h3>
+<p>CCNA Routing & Switching – Cisco (2023)</p>
+<p>Docker para Desenvolvedores</p>
+<p>Terraform – Infraestrutura como Código</p>
+<p>CI/CD – Automação e Deploy</p>
+</div>
+
+</div>
+
+<!-- EN -->
+<div id="en" class="lang">
+
+<div class="block">
+<h3>ABOUT ME</h3>
+<p>
+IT professional with experience in networking, infrastructure and technical support.
+Focused on LAN networks, Cisco configuration and troubleshooting, ensuring system performance and reliability.
+</p>
+</div>
+
+<div class="block">
+<h3>EXPERIENCE</h3>
+
+<div class="job-header">
+<span class="job-title">IT Technician</span>
+<span class="date">2023–2025</span>
+</div>
+
+<p>Sirius Group – Angola</p>
+
+<ul>
+<li>LAN network installation and maintenance</li>
+<li>Configuration of routers, switches and access points</li>
+<li>Technical support</li>
+<li>Hardware and software troubleshooting</li>
+<li>Network monitoring</li>
+<li>IT equipment management</li>
+</ul>
+</div>
+
+<div class="block">
+<h3>EDUCATION</h3>
+<p><b>IT Technician</b> – 2019–2024</p>
+<p>ITEL – Angola</p>
+
+<p><b>Systems Analysis</b> – 2024–</p>
+<p>AIEC – Brasil</p>
+</div>
+
+<div class="block">
+<h3>CERTIFICATES</h3>
+<p>CCNA Routing & Switching – Cisco (2023)</p>
+<p>Docker for Developers</p>
+<p>Terraform – Infrastructure as Code</p>
+<p>CI/CD Pipelines</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- 🔙 BOTÃO NOVO -->
+<div style="margin: 20px;">
+    <button onclick="window.location.href='../index.html'">
+        ⬅ Voltar ao Portfólio
+    </button>
+</div>
+
+<script>
+function setLang(lang) {
+    document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+    document.getElementById(lang).classList.add('active');
+}
+</script>
+
+</body>
+</html>

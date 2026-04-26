@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pedro Panzo | Portfolio</title>
+
+<link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body onload="setLang('en')">
+
+<!-- LANGUAGE -->
+<div class="top-bar">
+  <button class="lang-btn" onclick="setLang('en')">EN</button>
+  <button class="lang-btn" onclick="setLang('pt')">PT</button>
+</div>
+
+<!-- NAV 
+<div class="navbar">
+  <a id="navHome" href="#">Home</a>
+  <a id="navCv" href="cv/cv.html">CV</a>
+  <a id="navContact" href="contact.html">Contact</a>
+</div>-->
+
+<!-- CAROUSEL -->
+<div class="carousel" id="carousel"></div>
+<div class="overlay"></div>
+
+<!-- CONTENT -->
+<div class="container">
+  <div class="card">
+
+    <h1>Pedro Panzo</h1>
+    <p id="subtitle" class="subtitle"></p>
+
+    <div class="text">
+      <p id="p1"></p>
+      <p id="p2"></p>
+      <p id="p3"></p>
+      <p id="p4"></p>
+    </div>
+
+    <div class="buttons">
+      <button id="btnCv" onclick="location.href='cv/cv.html'"></button>
+      <button id="btnContact" onclick="location.href='contact.html'"></button>
+    </div>
+
+  </div>
+</div>
+
+<script src="scripts/carousel.js"></script>
+<script src="scripts/i18n.js"></script>
+
+</body>
+</html>

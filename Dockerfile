@@ -8,5 +8,5 @@ COPY . /usr/share/nginx/html
 
 # expor porta
 EXPOSE 80
-
+#cmd
 CMD ["nginx", "-g", "daemon off;"]

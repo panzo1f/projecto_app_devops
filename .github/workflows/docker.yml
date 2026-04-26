@@ -2,7 +2,7 @@ name: CI/CD Portfolio
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 jobs:
 

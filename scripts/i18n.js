@@ -1,36 +1,49 @@
-const langData = {
+const translations = {
   en: {
-    subtitle: "DevOps & Platform Engineering Enthusiast",
-    p1: "I am an Angolan technology professional currently based in Portugal.",
-    p2: "I have experience in IT infrastructure, networking and technical support.",
-    p3: "I worked as a DevOps intern contributing to deployment and automation.",
-    p4: "I participated in tech communities like Angola Open Source and Google Developer Group.",
+    subtitle: "DevOps & Cybersecurity Enthusiast",
+
+    p1: "Passionate about technology, automation, and security.",
+    p2: "Focused on DevOps, cloud, and infrastructure.",
+    p3: "Active in tech communities and events.",
+    p4: "Goal: work internationally.",
+
     btnCv: "View CV",
-    btnContact: "Contact Me",
-    navHome: "Home",
-    navCv: "CV",
-    navContact: "Contact"
+    btnContact: "Contact",
+
+    journeyTitle: "Professional Journey",
+    journeyText: "Participation in Angola Open Source and Google Developers Angola.",
+
+    certsTitle: "Courses & Certifications",
+    certsText: "Courses in programming, cloud, and cybersecurity.",
+
+    contactTitle: "Contact"
   },
 
   pt: {
-    subtitle: "Entusiasta de DevOps & Platform Engineering",
-    p1: "Sou um profissional de tecnologia angolano residente em Portugal.",
-    p2: "Tenho experiência em infraestrutura, redes e suporte técnico.",
-    p3: "Atuei como estagiário de DevOps em Angola.",
-    p4: "Participei em comunidades como Angola Open Source e Google Developer Group.",
+    subtitle: "DevOps & Cibersegurança",
+
+    p1: "Apaixonado por tecnologia e segurança.",
+    p2: "Focado em DevOps e cloud.",
+    p3: "Ativo em eventos tecnológicos.",
+    p4: "Objetivo: trabalhar internacionalmente.",
+
     btnCv: "Ver CV",
-    btnContact: "Entrar em Contacto",
-    navHome: "Início",
-    navCv: "CV",
-    navContact: "Contacto"
+    btnContact: "Contacto",
+
+    journeyTitle: "Jornada Profissional",
+    journeyText: "Participação em Angola Open Source e Google Developers Angola.",
+
+    certsTitle: "Cursos & Certificados",
+    certsText: "Cursos em programação, cloud e segurança.",
+
+    contactTitle: "Contacto"
   }
 };
 
 function setLang(lang) {
-  const t = langData[lang];
+  const t = translations[lang];
 
   document.getElementById("subtitle").innerText = t.subtitle;
-
   document.getElementById("p1").innerText = t.p1;
   document.getElementById("p2").innerText = t.p2;
   document.getElementById("p3").innerText = t.p3;
@@ -39,7 +52,11 @@ function setLang(lang) {
   document.getElementById("btnCv").innerText = t.btnCv;
   document.getElementById("btnContact").innerText = t.btnContact;
 
-  document.getElementById("navHome").innerText = t.navHome;
-  document.getElementById("navCv").innerText = t.navCv;
-  document.getElementById("navContact").innerText = t.navContact;
+  document.getElementById("journeyTitle").innerText = t.journeyTitle;
+  document.getElementById("journeyText").innerText = t.journeyText;
+
+  document.getElementById("certsTitle").innerText = t.certsTitle;
+  document.getElementById("certsText").innerText = t.certsText;
+
+  document.getElementById("contactTitle").innerText = t.contactTitle;
 }
